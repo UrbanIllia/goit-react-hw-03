@@ -1,0 +1,20 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%);
+  background-image: url("https://images.unsplash.com/photo-1614850715649-1c12f68e89dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

@@ -1,4 +1,7 @@
-.div {
-  font-size: 45px;
-  color: red;
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }

@@ -1,11 +1,17 @@
-import css from "./Contact.module.css";
+import styles from "./Contact.module.css";
 
-const Contact = ({ name, number }) => {
+export default function Contact({ contact, onDelete }) {
   return (
-    <div className={css.div}>
-      {name} {number}
-    </div>
+    <li className={styles.item}>
+      <p>
+        {contact.name}: {contact.number}
+      </p>
+      <button
+        className={styles.deleteButton}
+        onClick={() => onDelete(contact.id)}
+      >
+        Delete
+      </button>
+    </li>
   );
-};
-
-export default Contact;
+}

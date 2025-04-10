@@ -1,17 +1,17 @@
-.form {
-  color: blue;
-  font-size: 40px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 16px 16px;
-  margin-top: 30px;
+.wrapper {
+  margin: 20px 0;
 }
-.inputSearch {
-  background-color: coral;
-  border: 1px solid black;
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
   border-radius: 8px;
-  padding: 6px 12px;
-  font-size: 28px;
+  background: #2a2a4a;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: #aaa;
 }

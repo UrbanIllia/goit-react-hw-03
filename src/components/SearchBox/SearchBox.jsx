@@ -1,25 +1,15 @@
-import css from "./SearchBox.module.css";
-import { Formik, Form, Field } from "formik";
-import { useId } from "react";
+import styles from "./SearchBox.module.css";
 
-const SearchBox = () => {
-  const searchFieldId = useId();
+export default function SearchBox({ value, onChange }) {
   return (
-    <Formik>
-      <Form className={css.form}>
-        <label htmlFor={searchFieldId}>Find contacts by name</label>
-        <Field
-          className={css.inputSearch}
-          type="text"
-          name="search"
-          id={searchFieldId}
-        />
-      </Form>
-    </Formik>
+    <div className={styles.wrapper}>
+      <input
+        className={styles.input}
+        type="text"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder="Search contacts"
+      />
+    </div>
   );
-};
-
-export default SearchBox;
-{
-  /* <div className={css.div}>SearchBox</div>; */
 }
