@@ -3,3 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: #1a1a1a;
+  background-image: url(./img/gold.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.urban {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 60px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .urban {
+    left: 8px;
+    top: 8px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .urban {
+    left: 10px;
+    top: 10px;
+    width: 100px;
+  }
+}
